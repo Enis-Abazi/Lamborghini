@@ -1,0 +1,1717 @@
+html , body { 
+    overflow-x: hidden;
+}
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #f3f3fa;
+}
+a { 
+    text-decoration: none;
+}
+ul , ol { 
+    list-style-type: none;
+}
+@font-face {
+    font-family: "Bold";
+    src: url(../Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../Fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Italic";
+    src: url(../Fonts/Roboto-Italic.ttf);
+}
+.main { 
+    padding: 0;
+    position: relative;
+    z-index: 123123123123;
+}
+header { 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #181818;
+    padding: 25px;
+    height: 20vh;
+    z-index: 12312312312312312;
+}
+header .row { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+    padding: 10px;
+   position: relative;
+   bottom: 20px;
+}
+header .row .col { 
+    flex-basis: 50%;
+    position: relative;
+
+}
+header .row #col-flex { 
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+header .row #col-2-flex { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+header .row .col .logo img { 
+    object-fit: cover;
+}
+header .row .col .logo { 
+    padding: 0;
+}
+header .row .col .info-vehicle { 
+    position: relative;
+}
+header .row .col .info-vehicle .navbar { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+
+}
+header .row .col .info-vehicle .navbar li .inside  { 
+    position: absolute;
+    background-color: #181818;
+    top: 40px;
+    left: -10px;
+display: none;
+}
+header .row .col .info-vehicle .navbar li .inside-2 { 
+    position: absolute;
+    background-color: #181818;
+    top: 40px;
+    left: 0;
+    width: 150px;
+    display: none;
+}
+header .row .col .info-vehicle .navbar li .inside-3 { 
+    position: absolute;
+    background-color: #181818;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+header .row .col .info-vehicle .navbar li .inside-4 { 
+    position: absolute;
+    background-color: #181818;
+    top: 40px;
+    left: 0;
+    display: none;
+}
+header .row .col .info-vehicle .navbar li .inside .inside-li , header .row .col .info-vehicle .navbar li .inside-2 .inside-li , header .row .col .info-vehicle .navbar li .inside-3 .inside-li , header .row .col .info-vehicle .navbar li .inside-4 .inside-li  { 
+    font-size: 15px;
+    font-family: "Light";
+    font-weight: 100;
+    color: #fff;
+    padding: 15px;
+    filter: brightness(50%);
+    cursor: pointer; 
+    text-transform: uppercase;   
+}
+
+header .row .col .info-vehicle .navbar li:hover > .inside  { 
+    display: inline;
+    transition: 0.3s ease-in;
+    transition-delay: -0.5s linear;
+}
+header .row .col .info-vehicle .navbar li:hover > .inside-2 { 
+    display: inline;
+    transition: 0.3s ease-in;
+    transition-delay: -0.5s linear;
+}
+header .row .col .info-vehicle .navbar li:hover > .inside-3 { 
+    display: inline;
+    transition: 0.3s ease-in;
+    transition-delay: -0.5s linear;
+}
+header .row .col .info-vehicle .navbar li:hover > .inside-4 { 
+    display: inline;
+    transition: 0.3s ease-in;
+    transition-delay: -0.5s linear;
+}
+header .row .col .info-vehicle .navbar li:hover > .inside .inside-li:hover  , header .row .col .info-vehicle .navbar li:hover > .inside-2 .inside-li:hover , header .row .col .info-vehicle .navbar li:hover > .inside-3 .inside-li:hover , header .row .col .info-vehicle .navbar li:hover > .inside-4 .inside-li:hover { 
+    filter: brightness(100%);
+    width: auto;
+}
+
+header .row .col .info-vehicle .navbar li a { 
+    font-size: 18px;
+    font-family: "Light";
+    font-weight: 100;
+    color: #fff;
+    position: relative;
+    padding: 30px 0;
+}
+header .row .col .info-vehicle .navbar .titled-li { 
+    position: relative;
+}
+header .row .col .info-vehicle .navbar .titled-li::after { 
+    position: absolute;
+    content: " ";
+    top: calc(90%);
+    left: 0;
+    height: 1px;
+    width: 0;
+    display: block;
+    background-color: #fff;
+    z-index: 1111;
+    transition: width 0.3 ease-in;
+}
+header .row .col .info-vehicle .navbar .titled-li:hover::after { 
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+header .row .col .store { 
+    position: relative;
+}
+header .row .col .stored { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    padding: 10px 100px;
+}
+header .row .col .stored li { 
+    position: relative;
+}
+header .row .col .stored li::after { 
+    position: absolute;
+    content: " ";
+    top: calc(90%);
+    left: 0;
+    display: block;
+    height: 1px;
+    width: 0;
+    background-color: #fff;
+    z-index: 1111;
+      transition: width 0.3s ease-in;
+}
+header .row .col .stored li:hover::after { 
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+header .row .col .stored li a { 
+    font-size: 20px;
+    font-family: "Light";
+    font-weight: 100;
+    color: #fff;
+}
+header .row .col .icons { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    column-gap: 25px;
+    position: relative;
+    right: 15px;
+}
+header .row .col .icons i { 
+    font-size: 18px;
+}
+
+
+/* Burger */
+.myBurger { 
+    position: relative;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #3D0E61;
+  margin: 0px;  
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #B9FAF8;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 56px;
+    right: 20px;
+    width: 25px;
+    height: 12px;
+    display: inline;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #fff, #fff 20%, 
+      #181818 20%, #181818 40%, 
+      #fff 40%, #fff 60%, 
+      #181818 60%, #181818 80%, 
+      #fff 80%, #fff 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    position: fixed;
+    top: -450px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #0e0e0e;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu .row-burger { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 25px;
+}
+#hamburger-menu .row-burger .col-burger { 
+    flex-basis: 33%;
+}
+#hamburger-menu .row-burger .col-burger h3 { 
+    color: #fff;
+    font-size: 16px;
+    font-family: "Light";
+    font-weight: 100;
+    filter: brightness(50%);
+    text-align: center;
+    padding: 15px 0;
+}
+#hamburger-menu ul {
+  padding: 5px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+
+}
+#hamburger-menu ul .top-lists { 
+    position: relative;
+}
+#hamburger-menu ul .top-lists::after { 
+    position: absolute;
+    content: " ";
+    background-color: #fff;
+    height: 1px;
+    width: 0;
+    top: calc(85%);
+    left: 0;
+    z-index: 11111;
+    display: block;
+    transition: width 0.3s ease-in;
+}
+#hamburger-menu ul .top-lists:hover::after { 
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+#hamburger-menu hr { 
+    border: 1px solid #484848;
+    filter: brightness(50%);
+    margin: 0 5%;
+    border-radius: 100%;
+    
+}
+#hamburger-menu .row-burger .col-burger .flex { 
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    padding: 5px 0;
+    flex-direction: row;
+    justify-content: center;
+}
+#hamburger-menu .row-burger .col-burger .flex .active { 
+    font-family: "Light";
+    font-weight: 100;
+    filter: brightness(50%);
+    text-align: center;
+    padding: 15px 0;
+}
+#hamburger-menu .row-burger .col-burger .flex .right { 
+    position: relative;
+    left: 50px;
+}
+#hamburger-menu .row-burger .col-burger .flex .right  .fa-plus  { 
+    color: #fff !important;
+    padding: 0 35px !important;
+    font-size: 18px !important;
+}
+#hamburger-menu .row-burger .col-burger .flex .right  .clock { 
+    color: #fff !important;
+    padding: 0 35px !important;
+    font-size: 18px !important;
+}
+#hamburger-menu .row-burger .col-burger #active-ul .important-li:hover { 
+text-decoration: none !important;
+}
+#hamburger-menu .row-burger .col-burger .flex .right .fa-minus , #hamburger-menu .row-burger .col-burger .flex .right  .clockGrey { 
+    font-size: 18px;
+    color: #fff;
+    filter: brightness(50%);
+}
+#hamburger-menu .row-burger .col-burger #active-ul li a { 
+    font-size: 18px;
+    font-family: "Bold";
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+}
+#hamburger-menu .row-burger .col-burger #active-ul .active { 
+    font-family: "Light";
+    font-weight: 100;
+    filter: brightness(50%);
+    text-align: center;
+}
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Light";
+  font-weight: 100;
+}
+
+
+#hamburger-menu  .row-burger .col-burger #active-ul { 
+    position: relative;
+}
+#hamburger-menu  .row-burger .col-burger #active-ul li a::after { 
+    top: calc(100% + 10px);
+    content: " ";
+    position: absolute;
+    height: 1px;
+    display: block;
+    left: 0;
+    transition: width 0.3s ease-in;
+    z-index: 1111111;
+    width: 0;
+    background-color: #fff;
+}
+#hamburger-menu  .row-burger .col-burger #active-ul li a:hover::after { 
+    width: 100%;
+    transition: 0.3s ease-in;
+    z-index: 111111;
+}
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    top: 130px;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+/*  End of burger*/ 
+
+.blog { 
+  background-color: #0e0e0e;
+  position: relative;
+}
+.blog .myVideo { 
+    position: relative;
+}
+.blog video { 
+    width: 106%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    filter: brightness(50%);
+}
+.blog .container { 
+    position: relative;
+}
+.blog .left { 
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    animation: leftTitle 0.9s ease-in-out ;
+}
+.blog .left h1 { 
+    font-size: 75px;
+    font-family: "Bold";
+    font-weight: 1000;
+    color: #fff;
+    text-transform: uppercase;
+}
+/*  The Hexagon */
+.blog .left .hexacon { 
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+}
+
+.hexacon span:nth-child(1) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+.hexacon span:nth-child(2) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    left: 24px;
+    transform: rotate(50deg);
+    top: 12px;
+}
+.hexacon span:nth-child(3) { 
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    top: 24px;
+    left: 47px;
+}
+.hexacon span:nth-child(4) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 64px;
+    left: 24px;
+    transform: rotate(-50deg);
+}
+.hexacon span:nth-child(5) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 75px;
+}
+.hexacon span:nth-child(6) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 12px;
+    left: -24px;
+    transform: rotate(130deg);
+}
+.hexacon span:nth-child(7) { 
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    top: 24px;
+    left: -20px;
+}
+.hexacon span:nth-child(8) { 
+    position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      top: 64px;
+      left: -25px;
+      transform: rotate(-130deg);
+}
+.hexacon span:nth-child(9) { 
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    top: 30px;
+    transform: rotate(40deg);
+    left: 6px;
+}
+.hexacon span:nth-child(10) { 
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    top: 42px;
+    transform: rotate(-40deg);
+    left: 6px;
+}
+
+/* End of Hexagon */
+.marketing { 
+    padding: 0;
+    margin: 0;
+    position: relative;
+    background-color: black;
+}
+.marketing .slidershow { 
+    width: fit-content;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.marketing .middle { 
+    
+}
+.marketing .navigation { 
+    position: absolute;
+    top: 300px;
+    left: 5%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.marketing .bar { 
+    width: 50px;
+    height: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin: 6px;
+    transition: 0.3s ease-in;
+    z-index: 12312312312312312;
+}
+.marketing .bar:hover { 
+    background-color: #fff;
+    transition: 0.3s ease-in;
+}
+.marketing input[name="r"] { 
+    position: absolute;
+    visibility: hidden;
+}
+.marketing .slides { 
+    width: 3000px;
+    height: 100%;
+    display: flex;
+    position: relative;
+    top: -105px;
+}
+.marketing .slide { 
+    width: 16.6%;
+    height: 100%;
+    padding: 25px 0;
+    position: relative;
+}
+.marketing .slide h2 { 
+    position: relative;
+    top: 90px;
+    left: 100px;
+    font-size: 50px;
+    font-family: "Bold";
+    font-weight: 1000;
+    color: #fff;
+    text-transform: uppercase;
+}
+.marketing .slide h3 { 
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 200;
+    color: #f3f3fa;
+    position: relative;
+    top: 105px;
+    left: 75px;
+    text-transform: uppercase;
+    z-index: 1111;
+}
+.marketing .justImages { 
+    width: 16.6%;
+    height: 100%;
+    padding: 25px 0;
+    position: relative;
+}
+.marketing .justImages h2 { 
+    position: relative;
+    top: 90px;
+    left: 100px;
+    font-size: 50px;
+    font-family: "Bold";
+    font-weight: 1000;
+    color: #fff;
+    text-transform: uppercase;
+}
+.marketing .justImages h3 { 
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 200;
+    color: #f3f3fa;
+    position: relative;
+    top: 105px;
+    left: 75px;
+    text-transform: uppercase;
+    z-index: 1111;
+}
+.marketing .justImages img { 
+    width: 500px;
+    height: 350px;
+}
+.marketing .slide img { 
+    width: 500px;
+    height: 350px;
+}
+.marketing #r1:checked ~ .s1 { 
+    margin: 0 0 0 0 ;
+    transition: 0.3s ease-out;
+}
+.marketing #r2:checked ~ .s1{ 
+margin: 0 0 0 -10%;
+transition: 0.3s ease-out;
+filter: brightness(50%);
+}
+.marketing #r3:checked ~ .s1 , .marketing #r3:checked ~ .s2{ 
+margin: 0 0 0 -20%;
+transition: 0.3s ease-out;
+filter: brightness(50%);
+
+}
+.create { 
+    padding: 150px 0 150px 100px ;
+    background-color: #fff;
+    position: relative;
+}
+.create .container { 
+    position: relative;
+}
+.create .row { 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    padding: 15px 0;
+    position: relative;
+}
+.create .row .col { 
+    flex-basis: 50%;
+    position: relative;
+}
+.create .row .col h3 { 
+    font-size: 40px;
+    font-family: "Bold";
+    font-weight: 200;
+       color: #202020;
+       padding: 5px 0;
+}
+.create .row .col h1 { 
+    font-size: 60px;
+       color: #202020;
+       font-family: "Bold";
+       font-weight: 300;
+       padding: 10px 0;
+}
+/*  Car Changes */
+.create .row .col-width { 
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.create .row .col-width .myNav { 
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+}
+.create .row .col-width .myNav .arrow:first-child::before { 
+    position: absolute;
+    content: "Huracan";
+    font-size: 15px;
+    font-family: "Bold";
+    color: #202020;
+    font-weight: 1000;
+    bottom: 20px;
+}
+.create .row .col-width .myNav .arrow:last-child::before { 
+    position: absolute;
+    content: "Urus";
+    font-size: 15px;
+    font-family: "Bold";
+    color: #202020;
+    font-weight: 1000;
+    bottom: 20px; 
+}
+.create .row .col-width .myNav .arrow:hover { 
+    background-color: #202020;
+    transition: 0.3s ease;
+}
+.create .row .col-width .myNav .arrow { 
+    width: 150px;
+    height: 3px;
+    border: 1px solid #000;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #000;
+}
+.create .row .col-width input[name="n"] { 
+    position: absolute;
+    visibility: hidden;
+} 
+.create .row .col-width .new { 
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.create .row .col-width .new .new-car { 
+    width: 50%;
+    transition: 0.6s;
+}
+.create .row .col-width .new .new-car img { 
+    width: 800px;
+    height: 300px;
+    position: relative;
+    right: 250px;
+}
+#n1:checked ~ .car1 { 
+    margin: 0 0 0 0;
+}
+#n2:checked ~ .car1   {
+    margin: 0 0  0 -50%;
+}
+/*  Car Changes */
+
+/* Hexacon */
+
+.create .row .col .hexacon { 
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+}
+
+ .create .row .col .hexacon span:nth-child(1) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #202020;
+}
+.create .row .col .hexacon span:nth-child(2) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #202020;
+    left: 24px;
+    transform: rotate(50deg);
+    top: 12px;
+}
+.create .row .col .hexacon span:nth-child(3) { 
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #202020;
+    top: 24px;
+    left: 47px;
+}
+.create .row .col .hexacon span:nth-child(4) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #202020;
+    top: 64px;
+    left: 24px;
+    transform: rotate(-50deg);
+}
+.create .row .col .hexacon span:nth-child(5) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #202020;
+    top: 75px;
+}
+.create .row .col .hexacon span:nth-child(6) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #202020;
+    top: 12px;
+    left: -24px;
+    transform: rotate(130deg);
+}
+.create .row .col .hexacon span:nth-child(7) { 
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #202020;
+    top: 24px;
+    left: -20px;
+}
+.create .row .col .hexacon span:nth-child(8) { 
+    position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #202020;
+      top: 64px;
+      left: -25px;
+      transform: rotate(-130deg);
+}
+.create .row .col .hexacon span:nth-child(9) { 
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #202020;
+    top: 30px;
+    transform: rotate(40deg);
+    left: 6px;
+}
+.create .row .col .hexacon span:nth-child(10) { 
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #202020;
+    top: 42px;
+    transform: rotate(-40deg);
+    left: 6px;
+} 
+
+/* Hexacon */
+
+.dealership { 
+    background: url(../Images/dealer\ 6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.dealership .container { 
+    position: relative;
+}
+.dealership .left { 
+    position: relative;
+    text-align: start;
+    left: 150px;
+    top: 150px;
+}
+.dealership .left h3 { 
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 200;
+       color: #fff;
+       padding: 5px 0;
+       text-transform: uppercase;
+}
+.dealership .left h1 { 
+    font-size: 60px;
+    color: #fff;
+    font-family: "Bold";
+    font-weight: 300;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+/* Hexacon */ 
+
+.dealership .left .hexacon { 
+    position: relative;
+    cursor: pointer;
+    top: 10px;
+    left: 20px;
+}
+
+.dealership .left .hexacon span:nth-child(1) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+}
+.dealership .left .hexacon span:nth-child(2) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    left: 24px;
+    transform: rotate(50deg);
+    top: 12px;
+}
+.dealership .left .hexacon span:nth-child(3) { 
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    top: 24px;
+    left: 47px;
+}
+.dealership .left .hexacon span:nth-child(4) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 64px;
+    left: 24px;
+    transform: rotate(-50deg);
+}
+.dealership .left .hexacon span:nth-child(5) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 75px;
+}
+.dealership .left .hexacon span:nth-child(6) { 
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    top: 12px;
+    left: -24px;
+    transform: rotate(130deg);
+}
+.dealership .left .hexacon span:nth-child(7) { 
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #fff;
+    top: 24px;
+    left: -20px;
+}
+.dealership .left .hexacon span:nth-child(8) { 
+    position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      top: 64px;
+      left: -25px;
+      transform: rotate(-130deg);
+}
+.dealership .left .hexacon span:nth-child(9) { 
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    top: 30px;
+    transform: rotate(40deg);
+    left: 6px;
+}
+.dealership .left .hexacon span:nth-child(10) { 
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    top: 42px;
+    transform: rotate(-40deg);
+    left: 6px;
+}
+/* Hexacon */
+.news { 
+    padding: 100px;
+    background-color: #fff;
+    position: relative;
+}
+.news .title { 
+    position: relative;
+    text-align: start;
+}
+.news .title h1 { 
+    font-size: 80px;
+    color: #202020;
+    font-family: "Bold";
+    font-weight: 300;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+.news .title h3 { 
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 200;
+       color: #202020;
+       padding: 5px 0;
+       text-transform: uppercase;
+}
+.news .ourLambo { 
+    position: relative;
+    text-align: center;
+    padding: 10px 0;
+}
+.news .ourLambo img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.news .row { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+    padding: 15px 0;
+}
+.news .row .col { 
+    flex-basis: 30%;
+    position: relative;
+}
+.news .row .left { 
+    flex-basis: 70%;
+}
+.news .row .col h3 { 
+    font-size: 20px;
+    font-family: "Bold";
+    font-weight: 100;
+    color: #202020;
+    padding: 5px 0;
+    filter: brightness(50%);
+    text-transform: uppercase;
+}
+.news .row .col h1 { 
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 300;
+    color: #202020;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+.news .row .col h4 { 
+    font-size: 16px;
+    font-family: "Light";
+    font-weight: 100;
+    color: #202020;
+    padding: 5px 0;
+    opacity: 0.9;
+}
+.news .row .col .btn { 
+    float: right;
+    position: relative;
+    padding: 10px;
+}
+.news .row .col .btn a button { 
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    color: #202020;
+    font-size: 20px;
+    font-family: "Light";
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+.news .row .col .btn a button:hover { 
+    background-color: #202020;
+    color:#f3f3fa;
+    transition: 0.3s ease-in;
+}
+.news .flex { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+}
+.news .flex .col { 
+    flex-basis: 50%;
+    position: relative;
+}
+.news .flex .col img { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news .flex .col h3 { 
+    font-size: 18px;
+    font-family: "Light";
+    font-weight: 100;
+    color: #202020;
+    padding: 15px 0;
+  opacity: 0.9;
+    text-transform: uppercase;
+}
+.news .flex .col h1 { 
+    font-size: 35px;
+    font-family: "Bold";
+    font-weight: 300;
+    color: #202020;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.news .flex .col .btn { 
+    position: relative;
+    padding: 10px 0;
+}
+.news .flex .col .btn a button { 
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    color: #202020;
+    font-size: 17px;
+    font-family: "Light";
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    float: left;
+}
+.news .flex .col .btn a button:hover { 
+    background-color: #202020;
+    color:#f3f3fa;
+    transition: 0.3s ease-in;
+}
+.news .center { 
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+position: relative;
+}
+.news .center a button { 
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #b3b3b3;
+    color: #f3f3fa;
+    font-size: 20px;
+    font-family: "Light";
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+    background-color: #202020;
+}
+.news .center a button:hover { 
+    background-color: #f3f3fa;
+    color:#202020;
+    transition: 0.3s ease-in;
+    border: 1px solid #202020;
+}
+footer { 
+        padding: 25px 50px;
+        position: relative;
+        background-color: #202020;
+}
+footer .row { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 15px;
+    align-items: center;
+    padding: 10px 0;
+}
+footer .row .col { 
+    flex-basis: 50%;
+    padding: 5px 0;
+}
+footer .row .col ul { 
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+footer .row .col ul li a { 
+    font-size: 18px;
+    font-family: "Light";
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+footer .row .col ul li { 
+    position: relative;
+}
+footer .row .col ul li a::after { 
+    content: " ";
+    position: absolute;
+    top: calc(90% + 10px);
+    left: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    z-index: 1111;
+    transform: width 0.3s ease-in;
+}
+footer .row .col ul li a:hover::after { 
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+footer .row .col .footer-icons { 
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+    float: right;
+}
+footer .row .col .footer-icons i { 
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+}
+footer .row .col .footer-icons i:hover { 
+    transform: translateY(-8px);
+    transition: 0.3s ease-in;
+}
+footer .more-info { 
+    text-align: start;
+    position: relative;
+}
+footer .more-info h4 { 
+    font-size: 14px;
+    font-family: "Light";
+    font-weight: 300;
+    color: #fff;
+    padding: 15px 0;
+}
+footer .more-info h4::before { 
+    content: " * ";
+    color: #fff;
+    padding: 0 5px 0 0;
+}
+footer .more-info h3 { 
+    font-size: 16px;
+    font-family: "Light";
+    font-weight: 300;
+    color: #fff;
+    padding: 15px 0;
+}
+footer .more-info .myself { 
+    font-size: 18px;
+    font-family: "Bold";
+    font-weight: 100;
+    cursor: pointer;
+    color: #f3f3fa;
+}
+/*  KeyFrames   */
+
+@keyframes leftTitle {
+    0% { 
+        left: -100px;
+    }
+    50% { 
+        left: 20%;
+    }
+    100% { 
+        left: 10%;
+    }
+}
+/* Responsive */
+
+@media only screen and (max-width:600px) {
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    header  { 
+        height: 10vh;
+    }
+    #hamburger-menu { 
+        top: 37px;
+    }
+    header .row .col .logo img { 
+        width: 50px;
+        height: 50px;
+    }
+    header .row { 
+        bottom: 30px;
+    }
+    #hamburger-menu #sidebar-menu {
+     top: -550px;
+    }
+    header .row .col .info-vehicle .navbar , header .row .col .store { 
+        display: none;
+    }
+    #hamburger-input:checked + #hamburger-menu #sidebar-menu { 
+        top: 82px;
+        overflow-y: scroll;
+    }
+    #hamburger-menu .information-lists { 
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    #hamburger-menu .row-burger .col-burger{ 
+        display: none !important;
+    }
+    header .row .col .icons { 
+        right: -25px;
+    }
+    .blog video { 
+        height: 65vh;
+        filter: brightness(50%);
+    }
+    .blog .left h1 { 
+        font-size: 65px;
+    }
+    .marketing #r2:checked ~ .s1 { 
+        margin: 0 0 0 -17%;
+    }
+    .marketing #r3:checked ~ .s1 { 
+        margin: 0 0 0 -33.5%;
+    }
+    .marketing .slide h3 { 
+    left: 20px;
+    }
+    .marketing .slide h2 { 
+        left: 20px;
+    }
+    .create { 
+        padding: 20px;
+    }
+    .create .row { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .create .row .col-center { 
+        text-align: center;
+    }
+    .create .row .col-width .myNav { 
+        left: 180px;
+        bottom: -5px;
+    }
+    .create .row .col-width .myNav .arrow:last-child::before { 
+        color: #fff;
+    }
+    .create .row .col-width .myNav .arrow:first-child::before { 
+        color: #fff;
+    }
+    .create .row .col .hexacon { 
+        height: 15vh;
+    }
+    .create .row .col .hexacon span:nth-child(5) , .create .row .col .hexacon span:nth-child(1) , .dealership .left .hexacon span:nth-child(5) , .dealership .left .hexacon span:nth-child(1) { 
+        left: 0;
+    }
+    .create .row .col-width .new .new-car img { 
+        right: 215px;
+        top:20px;
+    }
+    .dealership .left { 
+        left: 20px;
+    }
+    .news { 
+        padding: 20px;
+    }
+    .news .title h1 { 
+        font-size: 45px;
+    }
+    .news .title h3 { 
+            font-size: 20px;
+    }
+    .news .row { 
+        flex-direction: column;
+        row-gap: 20px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .news .flex { 
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: start;
+        justify-content: start;
+    }
+    footer { 
+        padding: 20px;
+    }
+    footer .row .col ul { 
+        flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    row-gap: 25px;
+    }
+    footer .row .col .footer-icons { 
+        flex-direction: column;
+        row-gap: 25px;
+        flex-wrap: wrap;
+    }
+    .news .center { 
+        text-align: start;
+    }
+}
+@media only screen and (min-width:601px) and (max-width:768px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    header  { 
+        height: 10vh;
+    }
+    #hamburger-menu { 
+        top: 37px;
+    }
+    header .row .col .logo img { 
+        width: 50px;
+        height: 50px;
+    }
+    header .row { 
+        bottom: 30px;
+    }
+    #hamburger-menu #sidebar-menu {
+     top: -550px;
+    }
+    header .row .col .info-vehicle .navbar , header .row .col .store { 
+        display: none;
+    }
+    #hamburger-input:checked + #hamburger-menu #sidebar-menu { 
+        top: 73px;
+        overflow-y: scroll;
+        height: 70vh;
+    }
+    #hamburger-menu .information-lists { 
+        flex-direction: column;
+        row-gap: 10px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    #hamburger-menu .row-burger .col-burger{ 
+        display: none !important;
+    }
+    header .row .col .icons i { 
+       display: none;
+    }
+    .blog video { 
+        height: 65vh;
+        filter: brightness(50%);
+    }
+    .blog .left h1 { 
+        font-size: 65px;
+    }
+    .marketing #r2:checked ~ .s1 { 
+        margin: 0 0 0 -17%;
+    }
+    .marketing #r3:checked ~ .s1 { 
+        margin: 0 0 0 -33.5%;
+    }
+    .create { 
+        padding: 40px;
+    }
+    .create .row { 
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .create .row .col h1 , .create .row .col h3 { 
+        text-align: center;
+    }
+    .create .row .col .hexacon { 
+        height: 15vh;
+    }
+    .create .row .col-width .new .new-car img { 
+        right: 230px;
+    }
+    .create .row .col-width .myNav { 
+        left: 180px;
+        bottom: 15px;
+    }
+    .create .row .col-width .myNav .arrow:last-child::before , .create .row .col-width .myNav .arrow:first-child::before { 
+        color: #fff;
+    }
+    .dealership .left { 
+        left: 50px;
+    }
+    .news { 
+        padding: 40px;
+    }
+    .news .title h1 { 
+        font-size: 50px;
+    } 
+    .news .title h3 { 
+        font-size: 25px;
+    }
+    .news .row .col h1 { 
+        font-size: 30px;
+    }
+    .news .row .col h3 { 
+        font-size: 18px;
+    }
+    .news .row .col h4 { 
+        font-size: 15px;
+    }
+    .news .flex { 
+        flex-direction: column;
+        row-gap: 25px;
+        flex-wrap: wrap;
+    }
+    .news .center { 
+        text-align: start;
+    }
+    footer { 
+        padding: 30px;
+    }
+    footer .row { 
+        flex-wrap: wrap;
+    }
+    footer .row .col ul { 
+        flex-direction: column;
+        row-gap: 25px;
+        align-items: start;
+        justify-content: start;
+    }
+
+}
+@media only screen and (min-width:769px) and (max-width:1024px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * {
+         padding: 0;
+         margin: 0;
+    }
+    header { 
+        height: 18vh;
+    }
+    header .row .col .stored { 
+        display: none;
+    }
+    header .row .col { 
+        flex-basis: unset;
+    }
+    header .row .col .info-vehicle .navbar { 
+        padding: 10px 0 0 30px;
+    }
+    #hamburger-menu { 
+        right: 30px;
+    }
+    .blog video { 
+        height: 80vh;
+    }
+    .marketing #r2:checked ~ .s1 { 
+        margin: 0 0 0 -16.5%;
+    }
+    .marketing #r3:checked ~ .s1 { 
+        margin: 0 0 0 -33%;
+    }
+    .create { 
+        padding: 70px;
+    }
+    .create .row { 
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .create .row .col-center { 
+        text-align: start;
+        position: relative;
+        right: 25%;
+    }
+    .create .row .col .hexacon { 
+        height: 15vh;
+    }
+    .create .row .col-width .new .new-car img { 
+        right: 230px;
+    }
+    .create .row .col-width .myNav {
+ left: 180px;
+ bottom: 15px;
+ }
+ .create .row .col-width .myNav .arrow:last-child::before , .create .row .col-width .myNav .arrow:first-child::before { 
+    color: #fff;
+ }
+ .dealership .left {
+  left: 100px;
+}
+.news { 
+    padding: 70px;
+}
+.news .flex .col h1 { 
+    font-size: 30px;
+}
+.news .flex .col h3 { 
+font-size: 15px;
+}
+.news .flex .col .btn a button { 
+    font-size: 15px;
+}
+footer .row { 
+    flex-wrap: wrap;
+}
+footer .row .col { 
+    flex-basis: unset;
+}
+}
+@media only screen and (min-width:1025px) and (max-width:1240px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    #hamburger-menu #sidebar-menu { 
+        top: -650px;
+    }
+    header .row .col .info-vehicle .navbar { 
+        padding: 10px 0 0 30px;
+    }
+    header .row .col .icons i { 
+        display: none;
+    }
+    .marketing #r2:checked ~ .s1 { 
+        margin: 0 0 0 -16.5%;
+    }
+    .marketing #r3:checked ~ .s1 { 
+        margin: 0 0 0 -33.5%;
+    }
+    .create { 
+        padding: 100px 0 100px 100px;
+    }
+    .create .row .col-width .new .new-car img { 
+        right: 310px;
+    }
+
+}
+@media only screen and (min-width:1241px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    #hamburger-menu #sidebar-menu { 
+        top: -650px;
+    }
+
+}

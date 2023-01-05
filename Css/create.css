@@ -1,0 +1,311 @@
+html , body { 
+    overflow-x: hidden;
+}
+* { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #202020;
+}
+::-webkit-scrollbar { 
+    display: none;
+}
+a { 
+    text-decoration: none;
+}
+ul , ol { 
+    list-style-type: none;
+}
+@font-face {
+    font-family: "Bold";
+    src: url(../Fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: "Light";
+    src: url(../Fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "Italic";
+    src: url(../Fonts/Roboto-Italic.ttf);
+}
+header { 
+    display: flex;
+    padding: 50px 0;
+    background-color: #fff;
+    position: relative;
+    z-index: 111111111;
+}
+header .row { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    column-gap: 20px;
+}
+header .row .logo { 
+    position: absolute;
+    width: 125px;
+    background: #202020;
+    top: 0px;
+    height: 200px;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+header .row .logo img { 
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+    top: 20px;
+}
+header .row .models { 
+    position: relative;
+}
+header .row .models .car-model { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 45px;
+    position: relative;
+    left: 200px;
+}
+header .row .models .car-model li a { 
+    font-size: 17px;
+    font-family: "Light";
+    font-weight: 300;
+    color: #202020;
+    cursor: pointer;
+    position: relative;
+}
+header .row .models .car-model li a::after { 
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    z-index: 1111;
+    top: calc(50% + 10px);
+    left: 0;
+    transition: width 0.3s;
+    background-color: #d3e62d;
+}
+header .row .models .car-model li a:hover::after { 
+    width: 100%;
+    transition: 0.3s ease-in;
+}
+header .row .models .car-model li .active { 
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 500;
+    color: #202020;
+    cursor: pointer;
+    border-bottom: 2px solid #d3e62d;
+    padding: 0 !important;
+}
+header .row .language { 
+    position: absolute;
+    right: 35px;
+}
+header .row .language .language-ul { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px;
+    position: relative;
+}
+header .row .language .language-ul li { 
+    position: relative;
+}
+header .row .language .language-ul li a { 
+    font-size: 17px;
+    font-family: "Bold";
+    font-weight: 300;
+    color: #fff;
+    background-color: #202020;
+    border: 1px solid #202020;
+    padding: 25px;
+    position: relative;
+}
+header .row .language .language-ul li a::before { 
+    content: " + ";
+    font-size: 20px;
+    color: #fff;
+    padding: 0 15px 0 0;
+}
+header .row .language .language-ul li .more-languages { 
+    position: absolute;
+    background-color: #181818;
+    top: 46px;
+    display: none;
+    left: 0;
+}
+header .row .language .language-ul li .more-languages li { 
+    font-size: 15px;
+    font-family: "Light";
+    font-weight: 100;
+    color: #fff;
+    padding: 15px;
+    filter: brightness(50%);
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 130px;
+    position: relative;
+    left: 20px;
+}
+
+header .row .language .language-ul li:hover > .more-languages { 
+    display: initial;
+    transition: 0.3s ease;
+}
+header .row .language .language-ul li:hover > .more-languages li:hover { 
+    filter: brightness(100%);
+    transition: 0.3s ease-in;
+}
+.cars { 
+    padding: 50px;
+    background-color: #fff;
+}
+.cars .row { 
+     display: flex;
+     justify-content: center;
+     column-gap: 25px;
+     align-items: center;
+     padding: 8px 0;
+     text-align: center;
+     position: relative;
+     bottom: 130px;
+    overflow-y: hidden;
+    width: 7000px;
+    left: -60%;
+}
+.cars .row .col { 
+width: 20%;
+transition: 0.6s;
+}
+
+.cars .row .col .info { 
+    position: relative;
+    z-index: 1111111;
+    top: 120px;
+    left: 100px;
+}
+.cars .row .col .info h4 { 
+    font-size: 22px;
+    font-family: "Bold";
+    font-weight: 300;
+    color: #202020;
+    cursor: pointer;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.cars .row .col .info h2 { 
+    font-size: 32px;
+    font-family: "Light";
+    color: #202020;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.cars .row .col .info .upgraded { 
+    color: #fff;
+}
+.cars .row .col .background { 
+    position: relative;
+}
+.cars .row .col .background img { 
+    width: 140%;
+    height: 450px;
+    position: relative;
+    right: 150px;
+    object-fit: cover;
+    clip-path: polygon(44% 0, 100% 0, 57% 100%, 0% 100%);
+}
+.cars .row .col .car  .moved-img { 
+    position: relative;
+    left: 125px;
+}
+.cars .row .col .car { 
+    position: absolute;
+    bottom: -40px;
+}
+.cars .row .col .car img { 
+    width: 500px;
+    height: fit-content;
+}
+.cars .row .col .car .car-1-image-lamborghini { 
+    position: relative;
+    left: 75px;
+}
+.cars .selector { 
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    transform: translate(-50%);
+    display: flex;
+}
+.cars .checkpoints { 
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+.cars .myCheckpoint { 
+    width: 30px;
+    height: 30px;
+    border: 2px solid #202020;
+    background-color: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 6px;
+    position: relative;
+}
+.cars .myCheckpoint::before { 
+    content: " ";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #202020;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 100%;
+    left: 7px;
+    bottom: 7px;
+}
+.cars .myCheckpoint:hover::before { 
+    background-color: #202020;
+    transition: 0.3s ease;
+}
+.cars .myCheckpoint:hover { 
+    background-color: #202020;
+    transition: 0.3s ease;
+}
+input[name="ch"] { 
+    visibility: hidden;
+    position: absolute;
+}
+#ch1:checked ~ .col-1 { 
+    margin: 0 0 0 0;
+
+}
+#ch2:checked ~ .col-1 { 
+    margin: 0 0 0 -20%;
+}
+#ch3:checked ~ .col-1 { 
+    margin: 0 0 0 -40% ;
+
+}
+#ch4:checked ~ .col-1 { 
+    margin: 0 0 0 -60% ;
+   
+}
+#ch5:checked ~ .col-1 { 
+    margin: 0 0 0 -80% ;
+  
+}
+#ch6:checked ~ .col-1 { 
+    margin: 0 0 0  -100% ;
+    
+}
+#ch7:checked ~ .col-1 { 
+    margin: 0 0  0 -120% ;
+
+}
