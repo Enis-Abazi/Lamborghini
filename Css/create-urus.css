@@ -160,6 +160,117 @@ header .row .language .language-ul li:hover > .more-languages li:hover {
     filter: brightness(100%);
     transition: 0.3s ease-in;
 }
+
+.myBurger { 
+    position: relative;
+    display: none;
+}
+
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    background: black;
+    z-index: -1;
+}
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #3D0E61;
+  margin: 0px;  
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #B9FAF8;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    cursor: pointer;
+    position: fixed;
+    top: 56px;
+    right: 50%;
+    width: 25px;
+    height: 12px;
+    display: inline;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background: linear-gradient(
+      to bottom, 
+      #fff, #fff 20%, 
+      #181818 20%, #181818 40%, 
+      #fff 40%, #fff 60%, 
+      #181818 60%, #181818 80%, 
+      #fff 80%, #fff 100%
+    );
+}
+
+#hamburger-menu #sidebar-menu {
+    position: fixed;
+    top: -650px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #0e0e0e;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+#hamburger-menu ul {
+    padding: 5px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+  }
+  
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    top: 130px;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
 .cars { 
     padding: 50px;
     background-color: #fff;
@@ -286,4 +397,83 @@ input[name="ch"] {
 }
 #ch2:checked ~ .col-1 { 
     margin: 0 0 0 -30%;
+}
+@media only screen and (max-width:600px) { 
+    html , body { 
+        overflow-x: hidden;
+    }
+    * { 
+        padding: 0;
+        margin: 0;
+    }
+    ::-webkit-scrollbar { 
+        display: none;
+    }
+    header .row .language , header .row .models { 
+        display: none;
+    }
+    header .row .logo { 
+        z-index: 11111;
+    }
+    .myBurger { 
+        display: initial;
+    }
+    #hamburger-menu #sidebar-menu {
+        height: 70%;
+    }
+
+    #hamburger-menu { 
+        right: 70%;
+        top: 35px;
+    }
+    #hamburger-menu #sidebar-menu ul { 
+        flex-direction: column;
+    }
+    .lambo-sign { 
+        width: 250px;
+    }
+    #hamburger-menu #sidebar-menu ul li { 
+      position: relative;
+      text-align: center;
+    }
+    .img-nav-lamborghini-name { 
+        width: 300px;
+            position: relative;
+            bottom: 150px;
+            z-index: 11111;
+    }
+    #hamburger-input:checked + #hamburger-menu #sidebar-menu  { 
+        top: 80px;
+        transition: 0.3s ease-in;
+    }
+    #hamburger-menu #sidebar-menu { 
+        top: -800px;
+
+    }
+    .overlay { 
+        background-color: transparent;
+    }
+    .cars .row .col .background img { 
+        clip-path: polygon(25% 0%, 100% 0, 100% 100%, 75% 100%, 0 100%, 0% 50%);
+
+    }
+    .cars .row { 
+        left: 15%;
+    }
+    #ch2:checked ~ .col-1 { 
+        margin: 0 0 0 -27%;
+    }
+    .cars .row .col .car img {
+    width: 400px;
+    }
+    .cars .row .col .info {
+    left: 40px;
+
+    }
+    .cars .row .col .info .upgraded { 
+        font-size: 24px;
+    }
+    .cars .selector { 
+        left: 2.5%;
+    }
 }

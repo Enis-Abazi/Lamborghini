@@ -522,7 +522,8 @@ input[name="ch"] {
     }
     .cars .row .col .car .car-1-image-lamborghini { 
         left: 0;
-        bottom: 50px;
+        bottom: 70px;
+        z-index: 1111111111;
     }
     .cars .row .col .info h4 { 
         font-size: 17px;
